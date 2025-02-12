@@ -21,7 +21,7 @@ We can say **realm** represents our application infrastructure, which can have m
 2. Click upper top corner to create new realm. By default, you will only see `master`. 
 ![img.png](docs/img.png)
 3. Let's add new realm and call it `2061-app`. After clicking the `Create` button, a new realm will be created.<br/>
-![img_1.png](docs/aimg_1.png)
+![i2061-realm.png](docs/2061-realm.png)
 4. **Remember to perform all the operations in this new realm.**<br/>
 
 ### 2.2. Creating a client for backend (Spring Boot)
