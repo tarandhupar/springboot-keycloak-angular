@@ -9,6 +9,7 @@
 ## 1. Deploying Keycloak + Postgres with Docker
 Start docker with `docker compose up`.
 > The docker compose will spin up 3 continers one for keycloak, one for postgres and one for pgadmin. The postgres will create a database for keycloak with the DB name as 'keycloak'
+![containers.png](docs/containers.png)
 
 ## 2. Keycloak - configuration
 
@@ -108,16 +109,23 @@ admin
 ### To get the IP address of postgres databse, use the following commands
 docker ps
 > this will list all the running containers, grab the conatiner ID of postgres and run
+
 docker inspect <container id>
+![IP-address.png](docs/IP-address.png)
+
 > grab the IP address from the Networks block
 Use the IP address in the host field and use 'postgres' in the name field.
+
+
+![db-name.png](docs/db-name.png)
+![db-host.png](docs/db-host.png)
 
 ### 3.2. Compile the Springboot application
 Either use STS or Visual Studio Code or your favorite IDE
 Make sure to have lombok configured with your IDE to avoiad compilation errors
 
 ### 3.2. Run the Springboot application
-The application should connect to the database but the APIs will not ne accessible as it will need the auth token
+The application should connect to the database but the APIs will not be accessible as it will need the auth token
 
 ## 4. Angular - configuration
 
