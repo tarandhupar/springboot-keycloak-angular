@@ -121,6 +121,7 @@ Use the IP address in the host field and use 'postgres' in the name field.
 ![db-host.png](docs/db-host.png)
 
 > In pgadmin create a new database 'oppsDB'
+
 ![opps-db.png](docs/opps-db.png)
 
 ### 3.2. Compile the Springboot application
