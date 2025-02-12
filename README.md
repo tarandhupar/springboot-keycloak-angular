@@ -108,19 +108,19 @@ admin
 > You will then need to add the postgres server for the database that was created by the docker compose file, for which you will need to grab the IP address of the container.
 ### To get the IP address of postgres databse, use the following commands
 docker ps
-This will list all the running containers, grab the conatiner ID of postgres and run
+> this will list all the running containers, grab the conatiner ID of postgres and run
 
 docker inspect <container id>
 ![IP-address.png](docs/IP-address.png)
 
-Grab the IP address from the Networks block
+> grab the IP address from the Networks block
 Use the IP address in the host field and use 'postgres' in the name field.
 
 
 ![db-name.png](docs/db-name.png)
 ![db-host.png](docs/db-host.png)
 
-In pgadmin create a new database 'oppsDB'
+> In pgadmin create a new database 'oppsDB'
 ![opps-db.png](docs/opps-db.png)
 
 ### 3.2. Compile the Springboot application
